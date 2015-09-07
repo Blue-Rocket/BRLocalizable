@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.1'
+
+inhibit_all_warnings!
+
+target :BRLocalize do
+	target :BRLocalizeTests do
+		pod 'OCHamcrest',			'~> 4.1'
+	end
+end

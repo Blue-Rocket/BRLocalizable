@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79985132BC161E3829E511A9 /* libPods-BRLocalize-BRLocalizeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362FD3CD3D129A5D81C6E09A /* libPods-BRLocalize-BRLocalizeTests.a */; };
 		C98DC9471B9D28F60067D6A6 /* libBRLocalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C98DC93B1B9D28F60067D6A6 /* libBRLocalize.a */; };
 		C98DC96A1B9D2E050067D6A6 /* NSBundle+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9651B9D2E050067D6A6 /* NSBundle+BRLocalize.m */; };
 		C98DC96B1B9D2E050067D6A6 /* NSDictionary+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9671B9D2E050067D6A6 /* NSDictionary+BRLocalize.m */; };
@@ -20,6 +21,9 @@
 		C98DC98C1B9D32FE0067D6A6 /* UIView+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9891B9D32FE0067D6A6 /* UIView+BRLocalize.m */; };
 		C98DC98D1B9D32FE0067D6A6 /* NSObject+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC98A1B9D32FE0067D6A6 /* NSObject+BRLocalize.m */; };
 		C98DC9901B9D35EA0067D6A6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C98DC98F1B9D35EA0067D6A6 /* README.md */; };
+		C98DC9981B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9941B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m */; };
+		C98DC9991B9D3CA10067D6A6 /* BaseTestingSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9961B9D3CA10067D6A6 /* BaseTestingSupport.m */; };
+		C98DC99A1B9D3CA10067D6A6 /* strings.json in Resources */ = {isa = PBXBuildFile; fileRef = C98DC9971B9D3CA10067D6A6 /* strings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1AFEB2970B2799BE11C5F50A /* Pods-BRLocalize-BRLocalizeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRLocalize-BRLocalizeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BRLocalize-BRLocalizeTests/Pods-BRLocalize-BRLocalizeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		362FD3CD3D129A5D81C6E09A /* libPods-BRLocalize-BRLocalizeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BRLocalize-BRLocalizeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98DC93B1B9D28F60067D6A6 /* libBRLocalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBRLocalize.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98DC9461B9D28F60067D6A6 /* BRLocalizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRLocalizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98DC94C1B9D28F60067D6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +82,11 @@
 		C98DC98B1B9D32FE0067D6A6 /* NSObject+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BRLocalize.h"; sourceTree = "<group>"; };
 		C98DC98E1B9D34BC0067D6A6 /* BRLocalize.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = BRLocalize.podspec; path = ../BRLocalize.podspec; sourceTree = "<group>"; };
 		C98DC98F1B9D35EA0067D6A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C98DC9941B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_BRLocalizeTests.m; sourceTree = "<group>"; };
+		C98DC9951B9D3CA10067D6A6 /* BaseTestingSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTestingSupport.h; sourceTree = "<group>"; };
+		C98DC9961B9D3CA10067D6A6 /* BaseTestingSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTestingSupport.m; sourceTree = "<group>"; };
+		C98DC9971B9D3CA10067D6A6 /* strings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strings.json; sourceTree = "<group>"; };
+		FCFB08534F44B0DE375F50D2 /* Pods-BRLocalize-BRLocalizeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRLocalize-BRLocalizeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BRLocalize-BRLocalizeTests/Pods-BRLocalize-BRLocalizeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +102,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98DC9471B9D28F60067D6A6 /* libBRLocalize.a in Frameworks */,
+				79985132BC161E3829E511A9 /* libPods-BRLocalize-BRLocalizeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3601ABF59DB648B808F1C5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				362FD3CD3D129A5D81C6E09A /* libPods-BRLocalize-BRLocalizeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70564EFE6C40A14AABA65501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AFEB2970B2799BE11C5F50A /* Pods-BRLocalize-BRLocalizeTests.debug.xcconfig */,
+				FCFB08534F44B0DE375F50D2 /* Pods-BRLocalize-BRLocalizeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C98DC9321B9D28F60067D6A6 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +133,8 @@
 				C98DC9551B9D298B0067D6A6 /* Code */,
 				C98DC94A1B9D28F60067D6A6 /* BRLocalizeTests */,
 				C98DC93C1B9D28F60067D6A6 /* Products */,
+				70564EFE6C40A14AABA65501 /* Pods */,
+				3601ABF59DB648B808F1C5FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +150,10 @@
 		C98DC94A1B9D28F60067D6A6 /* BRLocalizeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C98DC9931B9D3CA10067D6A6 /* Core */,
+				C98DC9951B9D3CA10067D6A6 /* BaseTestingSupport.h */,
+				C98DC9961B9D3CA10067D6A6 /* BaseTestingSupport.m */,
+				C98DC9971B9D3CA10067D6A6 /* strings.json */,
 				C98DC94B1B9D28F60067D6A6 /* Supporting Files */,
 			);
 			path = BRLocalizeTests;
@@ -190,6 +225,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		C98DC9931B9D3CA10067D6A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC9941B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C98DC9521B9D28F60067D6A6 /* Build configuration list for PBXNativeTarget "BRLocalizeTests" */;
 			buildPhases = (
+				25D3CE350DF74DA8ECFE805F /* Check Pods Manifest.lock */,
 				C98DC9421B9D28F60067D6A6 /* Sources */,
 				C98DC9431B9D28F60067D6A6 /* Frameworks */,
 				C98DC9441B9D28F60067D6A6 /* Resources */,
+				362BA6CE691C69839FA2EB94 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,10 +313,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98DC99A1B9D3CA10067D6A6 /* strings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25D3CE350DF74DA8ECFE805F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		362BA6CE691C69839FA2EB94 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BRLocalize-BRLocalizeTests/Pods-BRLocalize-BRLocalizeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C98DC9371B9D28F60067D6A6 /* Sources */ = {
@@ -297,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98DC9981B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m in Sources */,
+				C98DC9991B9D3CA10067D6A6 /* BaseTestingSupport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +490,7 @@
 		};
 		C98DC9531B9D28F60067D6A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFEB2970B2799BE11C5F50A /* Pods-BRLocalize-BRLocalizeTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -427,6 +509,7 @@
 		};
 		C98DC9541B9D28F60067D6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFB08534F44B0DE375F50D2 /* Pods-BRLocalize-BRLocalizeTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -458,6 +541,7 @@
 				C98DC9511B9D28F60067D6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C98DC9521B9D28F60067D6A6 /* Build configuration list for PBXNativeTarget "BRLocalizeTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +550,7 @@
 				C98DC9541B9D28F60067D6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

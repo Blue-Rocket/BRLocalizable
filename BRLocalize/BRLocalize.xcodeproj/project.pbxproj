@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C98DC9471B9D28F60067D6A6 /* libBRLocalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C98DC93B1B9D28F60067D6A6 /* libBRLocalize.a */; };
+		C98DC96A1B9D2E050067D6A6 /* NSBundle+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9651B9D2E050067D6A6 /* NSBundle+BRLocalize.m */; };
+		C98DC96B1B9D2E050067D6A6 /* NSDictionary+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9671B9D2E050067D6A6 /* NSDictionary+BRLocalize.m */; };
+		C98DC96C1B9D2E050067D6A6 /* NSString+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9691B9D2E050067D6A6 /* NSString+BRLocalize.m */; };
+		C98DC9811B9D30E70067D6A6 /* UINavigationItem+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9731B9D30E70067D6A6 /* UINavigationItem+BRLocalize.m */; };
+		C98DC9821B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9741B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.m */; };
+		C98DC9831B9D30E70067D6A6 /* UIButton+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9781B9D30E70067D6A6 /* UIButton+BRLocalize.m */; };
+		C98DC9841B9D30E70067D6A6 /* UILabel+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC97A1B9D30E70067D6A6 /* UILabel+BRLocalize.m */; };
+		C98DC9851B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC97C1B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.m */; };
+		C98DC9861B9D30E70067D6A6 /* UITextField+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC97E1B9D30E70067D6A6 /* UITextField+BRLocalize.m */; };
+		C98DC98C1B9D32FE0067D6A6 /* UIView+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9891B9D32FE0067D6A6 /* UIView+BRLocalize.m */; };
+		C98DC98D1B9D32FE0067D6A6 /* NSObject+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC98A1B9D32FE0067D6A6 /* NSObject+BRLocalize.m */; };
+		C98DC9901B9D35EA0067D6A6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C98DC98F1B9D35EA0067D6A6 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C98DC9481B9D28F60067D6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98DC9331B9D28F60067D6A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98DC93A1B9D28F60067D6A6;
+			remoteInfo = BRLocalize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C98DC9391B9D28F60067D6A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C98DC93B1B9D28F60067D6A6 /* libBRLocalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBRLocalize.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98DC9461B9D28F60067D6A6 /* BRLocalizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRLocalizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98DC94C1B9D28F60067D6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98DC9571B9D298B0067D6A6 /* BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRLocalize.h; path = Code/BRLocalize.h; sourceTree = "<group>"; };
+		C98DC9611B9D2E050067D6A6 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Code/Core.h; sourceTree = "<group>"; };
+		C98DC9631B9D2E050067D6A6 /* BRLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocalizable.h; sourceTree = "<group>"; };
+		C98DC9641B9D2E050067D6A6 /* NSBundle+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9651B9D2E050067D6A6 /* NSBundle+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9661B9D2E050067D6A6 /* NSDictionary+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9671B9D2E050067D6A6 /* NSDictionary+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9681B9D2E050067D6A6 /* NSString+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9691B9D2E050067D6A6 /* NSString+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9711B9D2EDE0067D6A6 /* UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UI.h; path = Code/UI.h; sourceTree = "<group>"; };
+		C98DC9731B9D30E70067D6A6 /* UINavigationItem+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9741B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9751B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9761B9D30E70067D6A6 /* UINavigationItem+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9771B9D30E70067D6A6 /* UIButton+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9781B9D30E70067D6A6 /* UIButton+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9791B9D30E70067D6A6 /* UILabel+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC97A1B9D30E70067D6A6 /* UILabel+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC97B1B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC97C1B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC97D1B9D30E70067D6A6 /* UITextField+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC97E1B9D30E70067D6A6 /* UITextField+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC9881B9D32FE0067D6A6 /* UIView+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC9891B9D32FE0067D6A6 /* UIView+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC98A1B9D32FE0067D6A6 /* NSObject+BRLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BRLocalize.m"; sourceTree = "<group>"; };
+		C98DC98B1B9D32FE0067D6A6 /* NSObject+BRLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BRLocalize.h"; sourceTree = "<group>"; };
+		C98DC98E1B9D34BC0067D6A6 /* BRLocalize.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = BRLocalize.podspec; path = ../BRLocalize.podspec; sourceTree = "<group>"; };
+		C98DC98F1B9D35EA0067D6A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C98DC9381B9D28F60067D6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98DC9431B9D28F60067D6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98DC9471B9D28F60067D6A6 /* libBRLocalize.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C98DC9321B9D28F60067D6A6 = {
+			isa = PBXGroup;
+			children = (
+				C98DC96D1B9D2E0A0067D6A6 /* Packaging */,
+				C98DC9551B9D298B0067D6A6 /* Code */,
+				C98DC94A1B9D28F60067D6A6 /* BRLocalizeTests */,
+				C98DC93C1B9D28F60067D6A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C98DC93C1B9D28F60067D6A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC93B1B9D28F60067D6A6 /* libBRLocalize.a */,
+				C98DC9461B9D28F60067D6A6 /* BRLocalizeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C98DC94A1B9D28F60067D6A6 /* BRLocalizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC94B1B9D28F60067D6A6 /* Supporting Files */,
+			);
+			path = BRLocalizeTests;
+			sourceTree = "<group>";
+		};
+		C98DC94B1B9D28F60067D6A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC94C1B9D28F60067D6A6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C98DC9551B9D298B0067D6A6 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC9621B9D2E050067D6A6 /* Core */,
+				C98DC96E1B9D2EDE0067D6A6 /* UI */,
+			);
+			path = Code;
+			sourceTree = SOURCE_ROOT;
+		};
+		C98DC9621B9D2E050067D6A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC9631B9D2E050067D6A6 /* BRLocalizable.h */,
+				C98DC9641B9D2E050067D6A6 /* NSBundle+BRLocalize.h */,
+				C98DC9651B9D2E050067D6A6 /* NSBundle+BRLocalize.m */,
+				C98DC9661B9D2E050067D6A6 /* NSDictionary+BRLocalize.h */,
+				C98DC9671B9D2E050067D6A6 /* NSDictionary+BRLocalize.m */,
+				C98DC98B1B9D32FE0067D6A6 /* NSObject+BRLocalize.h */,
+				C98DC98A1B9D32FE0067D6A6 /* NSObject+BRLocalize.m */,
+				C98DC9681B9D2E050067D6A6 /* NSString+BRLocalize.h */,
+				C98DC9691B9D2E050067D6A6 /* NSString+BRLocalize.m */,
+				C98DC9881B9D32FE0067D6A6 /* UIView+BRLocalize.h */,
+				C98DC9891B9D32FE0067D6A6 /* UIView+BRLocalize.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C98DC96D1B9D2E0A0067D6A6 /* Packaging */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC98F1B9D35EA0067D6A6 /* README.md */,
+				C98DC98E1B9D34BC0067D6A6 /* BRLocalize.podspec */,
+				C98DC9571B9D298B0067D6A6 /* BRLocalize.h */,
+				C98DC9611B9D2E050067D6A6 /* Core.h */,
+				C98DC9711B9D2EDE0067D6A6 /* UI.h */,
+			);
+			name = Packaging;
+			sourceTree = "<group>";
+		};
+		C98DC96E1B9D2EDE0067D6A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C98DC9751B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.h */,
+				C98DC9741B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.m */,
+				C98DC9771B9D30E70067D6A6 /* UIButton+BRLocalize.h */,
+				C98DC9781B9D30E70067D6A6 /* UIButton+BRLocalize.m */,
+				C98DC9791B9D30E70067D6A6 /* UILabel+BRLocalize.h */,
+				C98DC97A1B9D30E70067D6A6 /* UILabel+BRLocalize.m */,
+				C98DC9761B9D30E70067D6A6 /* UINavigationItem+BRLocalize.h */,
+				C98DC9731B9D30E70067D6A6 /* UINavigationItem+BRLocalize.m */,
+				C98DC97B1B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.h */,
+				C98DC97C1B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.m */,
+				C98DC97D1B9D30E70067D6A6 /* UITextField+BRLocalize.h */,
+				C98DC97E1B9D30E70067D6A6 /* UITextField+BRLocalize.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C98DC93A1B9D28F60067D6A6 /* BRLocalize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98DC94F1B9D28F60067D6A6 /* Build configuration list for PBXNativeTarget "BRLocalize" */;
+			buildPhases = (
+				C98DC9371B9D28F60067D6A6 /* Sources */,
+				C98DC9381B9D28F60067D6A6 /* Frameworks */,
+				C98DC9391B9D28F60067D6A6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRLocalize;
+			productName = BRLocalize;
+			productReference = C98DC93B1B9D28F60067D6A6 /* libBRLocalize.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C98DC9451B9D28F60067D6A6 /* BRLocalizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98DC9521B9D28F60067D6A6 /* Build configuration list for PBXNativeTarget "BRLocalizeTests" */;
+			buildPhases = (
+				C98DC9421B9D28F60067D6A6 /* Sources */,
+				C98DC9431B9D28F60067D6A6 /* Frameworks */,
+				C98DC9441B9D28F60067D6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C98DC9491B9D28F60067D6A6 /* PBXTargetDependency */,
+			);
+			name = BRLocalizeTests;
+			productName = BRLocalizeTests;
+			productReference = C98DC9461B9D28F60067D6A6 /* BRLocalizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C98DC9331B9D28F60067D6A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Blue Rocket, Inc.";
+				TargetAttributes = {
+					C98DC93A1B9D28F60067D6A6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C98DC9451B9D28F60067D6A6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = C98DC9361B9D28F60067D6A6 /* Build configuration list for PBXProject "BRLocalize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C98DC9321B9D28F60067D6A6;
+			productRefGroup = C98DC93C1B9D28F60067D6A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C98DC93A1B9D28F60067D6A6 /* BRLocalize */,
+				C98DC9451B9D28F60067D6A6 /* BRLocalizeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C98DC9441B9D28F60067D6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C98DC9371B9D28F60067D6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98DC9821B9D30E70067D6A6 /* UIBarButtonItem+BRLocalize.m in Sources */,
+				C98DC9851B9D30E70067D6A6 /* UISegmentedControl+BRLocalize.m in Sources */,
+				C98DC96C1B9D2E050067D6A6 /* NSString+BRLocalize.m in Sources */,
+				C98DC98D1B9D32FE0067D6A6 /* NSObject+BRLocalize.m in Sources */,
+				C98DC9861B9D30E70067D6A6 /* UITextField+BRLocalize.m in Sources */,
+				C98DC96A1B9D2E050067D6A6 /* NSBundle+BRLocalize.m in Sources */,
+				C98DC9901B9D35EA0067D6A6 /* README.md in Sources */,
+				C98DC98C1B9D32FE0067D6A6 /* UIView+BRLocalize.m in Sources */,
+				C98DC9831B9D30E70067D6A6 /* UIButton+BRLocalize.m in Sources */,
+				C98DC96B1B9D2E050067D6A6 /* NSDictionary+BRLocalize.m in Sources */,
+				C98DC9811B9D30E70067D6A6 /* UINavigationItem+BRLocalize.m in Sources */,
+				C98DC9841B9D30E70067D6A6 /* UILabel+BRLocalize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98DC9421B9D28F60067D6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C98DC9491B9D28F60067D6A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98DC93A1B9D28F60067D6A6 /* BRLocalize */;
+			targetProxy = C98DC9481B9D28F60067D6A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C98DC94D1B9D28F60067D6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C98DC94E1B9D28F60067D6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C98DC9501B9D28F60067D6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C98DC9511B9D28F60067D6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C98DC9531B9D28F60067D6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BRLocalizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C98DC9541B9D28F60067D6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BRLocalizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C98DC9361B9D28F60067D6A6 /* Build configuration list for PBXProject "BRLocalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98DC94D1B9D28F60067D6A6 /* Debug */,
+				C98DC94E1B9D28F60067D6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C98DC94F1B9D28F60067D6A6 /* Build configuration list for PBXNativeTarget "BRLocalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98DC9501B9D28F60067D6A6 /* Debug */,
+				C98DC9511B9D28F60067D6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C98DC9521B9D28F60067D6A6 /* Build configuration list for PBXNativeTarget "BRLocalizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98DC9531B9D28F60067D6A6 /* Debug */,
+				C98DC9541B9D28F60067D6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C98DC9331B9D28F60067D6A6 /* Project object */;
+}

@@ -20,7 +20,6 @@
 		C98DC9861B9D30E70067D6A6 /* UITextField+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC97E1B9D30E70067D6A6 /* UITextField+BRLocalize.m */; };
 		C98DC98C1B9D32FE0067D6A6 /* UIView+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9891B9D32FE0067D6A6 /* UIView+BRLocalize.m */; };
 		C98DC98D1B9D32FE0067D6A6 /* NSObject+BRLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC98A1B9D32FE0067D6A6 /* NSObject+BRLocalize.m */; };
-		C98DC9901B9D35EA0067D6A6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C98DC98F1B9D35EA0067D6A6 /* README.md */; };
 		C98DC9981B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9941B9D3CA10067D6A6 /* NSString_BRLocalizeTests.m */; };
 		C98DC9991B9D3CA10067D6A6 /* BaseTestingSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C98DC9961B9D3CA10067D6A6 /* BaseTestingSupport.m */; };
 		C98DC99A1B9D3CA10067D6A6 /* strings.json in Resources */ = {isa = PBXBuildFile; fileRef = C98DC9971B9D3CA10067D6A6 /* strings.json */; };
@@ -363,7 +362,6 @@
 				C98DC98D1B9D32FE0067D6A6 /* NSObject+BRLocalize.m in Sources */,
 				C98DC9861B9D30E70067D6A6 /* UITextField+BRLocalize.m in Sources */,
 				C98DC96A1B9D2E050067D6A6 /* NSBundle+BRLocalize.m in Sources */,
-				C98DC9901B9D35EA0067D6A6 /* README.md in Sources */,
 				C98DC98C1B9D32FE0067D6A6 /* UIView+BRLocalize.m in Sources */,
 				C98DC9831B9D30E70067D6A6 /* UIButton+BRLocalize.m in Sources */,
 				C98DC96B1B9D2E050067D6A6 /* NSDictionary+BRLocalize.m in Sources */,

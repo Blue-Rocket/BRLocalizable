@@ -2,7 +2,7 @@
 
 **BRLocalize** provides a way to store localized strings in a hierarchical JSON file and then have placeholder strings in NIB files automatically replaced by their localized value.
 
-Here's an example JSON strings file, `json.strings`:
+Here's an example JSON strings file, `strings.json`:
 
 ```json
 {

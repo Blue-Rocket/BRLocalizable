@@ -33,6 +33,28 @@
 	return [self localizedStringWithAppStrings:[NSBundle appStrings]];
 }
 
++ (NSString *)localizedAppString:(NSString *)format, ... {
+	va_list args;
+	va_start(args, format);
+	NSString *s = [format localizedString];
+	if ( [s isEqualToString:format] == NO ) {
+		s = [[NSString alloc] initWithFormat:s arguments:args];
+	}
+	va_end(args);
+	return s;
+}
+
++ (NSString *)localizedString:(NSString *)format withAppStrings:(NSDictionary *)strings, ... {
+	va_list args;
+	va_start(args, strings);
+	NSString *s = [format localizedStringWithAppStrings:strings];
+	if ( [s isEqualToString:format] == NO ) {
+		s = [[NSString alloc] initWithFormat:s arguments:args];
+	}
+	va_end(args);
+	return s;
+}
+
 - (NSString *)localizedStringWithAppStrings:(NSDictionary *)strings {
     NSString *finalString = self;
     NSString *string = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

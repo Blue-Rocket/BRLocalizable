@@ -58,4 +58,19 @@
 	assertThat(loc, equalTo(@"error.general"));
 }
 
+- (void)testLocalizeFormat {
+	NSString *loc = [NSString localizedString:@"{error.general}" withAppStrings:strings, @"BAM!"];
+	assertThat(loc, equalTo(@"This is a general error: BAM!"));
+}
+
+- (void)testLocalizeFormatMissingArgument {
+	NSString *loc = [NSString localizedString:@"{error.general}" withAppStrings:strings];
+	assertThat(loc, equalTo(@"This is a general error: (null)"));
+}
+
+- (void)testLocalizeFormatMissingKey {
+	NSString *loc = [NSString localizedString:@"{error.doesNotExist}" withAppStrings:strings, @"BAM!"];
+	assertThat(loc, equalTo(@"{error.doesNotExist}"));
+}
+
 @end

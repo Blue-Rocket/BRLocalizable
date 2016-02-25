@@ -24,6 +24,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Extension of NSString with utilities for loading localized application strings.
  */
@@ -46,4 +48,28 @@
  */
 - (NSString *)localizedStringWithAppStrings:(NSDictionary *)strings;
 
+/**
+ Localize a template string in the form of @c {keyPath} with the value associated with @c keyPath
+ in the standard application JSON strings resource, followed by formatting that string with the
+ given format parameters.
+ 
+ @param format The format string with @c {keyPath} style placeholder.
+ 
+ @return The localized string, or @c format if a localization is not avaialble.
+ */
++ (NSString *)localizedAppString:(NSString *)format, ...;
+
+/**
+ Localize a template string in the form of @c {keyPath} with the value associated with @c keyPath
+ in the given application JSON strings dictionary, followed by formatting that string with the
+ given format parameters.
+ 
+ @param format The format string with @c {keyPath} style placeholder.
+ 
+ @return The localized string, or @c format if a localization is not avaialble.
+ */
++ (NSString *)localizedString:(NSString *)format withAppStrings:(NSDictionary *)strings, ...;
+
 @end
+
+NS_ASSUME_NONNULL_END

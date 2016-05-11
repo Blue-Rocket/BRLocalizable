@@ -34,7 +34,7 @@
 }
 
 + (NSString *)localizedAppString:(NSString *)format, ... {
-	va_list args = NULL;
+	va_list args;
 	va_start(args, format);
 	NSString *s = [NSString localizedAppString:format locale:[NSLocale currentLocale] arguments:args];
 	va_end(args);
@@ -50,7 +50,7 @@
 }
 
 + (NSString *)localizedString:(NSString *)format withAppStrings:(NSDictionary *)strings, ... {
-	va_list args = NULL;
+	va_list args;
 	va_start(args, strings);
 	NSString *s = [NSString localizedString:format withAppStrings:strings locale:nil arguments:args];
 	va_end(args);

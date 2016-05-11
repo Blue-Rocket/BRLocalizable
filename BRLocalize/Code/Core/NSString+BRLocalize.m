@@ -34,26 +34,38 @@
 }
 
 + (NSString *)localizedAppString:(NSString *)format, ... {
-	va_list args;
+	va_list args = NULL;
 	va_start(args, format);
-	NSString *s = [format localizedString];
-	if ( [s isEqualToString:format] == NO ) {
-		s = [[NSString alloc] initWithFormat:s arguments:args];
-	}
+	NSString *s = [NSString localizedAppString:format locale:[NSLocale currentLocale] arguments:args];
 	va_end(args);
 	return s;
 }
 
-+ (NSString *)localizedString:(NSString *)format withAppStrings:(NSDictionary *)strings, ... {
-	va_list args;
-	va_start(args, strings);
-	NSString *s = [format localizedStringWithAppStrings:strings];
++ (NSString *)localizedAppString:(NSString *)format locale:(nullable NSLocale *)locale arguments:(va_list)argList {
+	NSString *s = [format localizedStringWithAppStrings:[[NSBundle mainBundle] appStringsForLocale:locale]];
 	if ( [s isEqualToString:format] == NO ) {
-		s = [[NSString alloc] initWithFormat:s arguments:args];
+		s = [[NSString alloc] initWithFormat:s locale:locale arguments:argList];
 	}
+	return s;
+}
+
++ (NSString *)localizedString:(NSString *)format withAppStrings:(NSDictionary *)strings, ... {
+	va_list args = NULL;
+	va_start(args, strings);
+	NSString *s = [NSString localizedString:format withAppStrings:strings locale:nil arguments:args];
 	va_end(args);
 	return s;
 }
+
++ (NSString *)localizedString:(NSString *)format withAppStrings:(NSDictionary *)strings
+					   locale:(nullable NSLocale *)locale arguments:(va_list)argList {
+	NSString *s = [format localizedStringWithAppStrings:strings];
+	if ( [s isEqualToString:format] == NO ) {
+		s = [[NSString alloc] initWithFormat:s locale:locale arguments:argList];
+	}
+	return s;
+}
+
 
 - (NSString *)localizedStringWithAppStrings:(NSDictionary *)strings {
     NSString *finalString = self;

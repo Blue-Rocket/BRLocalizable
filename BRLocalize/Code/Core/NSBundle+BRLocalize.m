@@ -11,24 +11,34 @@
 @implementation NSBundle (BRLocalize)
 
 + (NSDictionary *)appStrings {
-	static NSDictionary *appStrings = nil;
-	static dispatch_once_t onceToken;
-	dispatch_once(&onceToken, ^{
-		appStrings = [NSBundle mainBundle].appStrings;
-	});
-	return appStrings;
+	return [NSBundle mainBundle].appStrings;
 }
 
 - (NSDictionary *)appStrings {
-	NSString *path = [self pathForResource:@"strings" ofType:@"json"];
-	if ( !path ) {
-		return nil;
+	return [self appStringsForLocale:nil];
+}
+
+- (NSDictionary *)appStringsForLocale:(NSLocale *)locale {
+	static NSMutableDictionary *appStrings = nil;
+	if ( appStrings == nil ) {
+		appStrings = [[NSMutableDictionary alloc] initWithCapacity:2];
 	}
-	NSData *data = [[NSData alloc] initWithContentsOfFile:path];
-	NSError *error = nil;
-	id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-	if ( error ) {
-		NSLog(@"Error loading strings.json: %@", [error localizedDescription]);
+	
+	NSString *lang = [(locale == nil ? [NSLocale currentLocale] : locale) objectForKey:NSLocaleLanguageCode];
+	NSDictionary *result = appStrings[lang];
+	if ( !result ) {
+		NSString *path = [self pathForResource:@"strings" ofType:@"json" inDirectory:nil forLocalization:lang];
+		if ( !path ) {
+			return nil;
+		}
+		NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+		NSError *error = nil;
+		result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+		if ( error ) {
+			NSLog(@"Error loading strings.json (%@): %@", lang, [error localizedDescription]);
+		} else {
+			appStrings[lang] = result;
+		}
 	}
 	return result;
 }

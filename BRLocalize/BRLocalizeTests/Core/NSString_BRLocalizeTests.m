@@ -64,7 +64,7 @@
 }
 
 - (void)testLocalizeFormatMissingArgument {
-	NSString *loc = [NSString localizedString:@"{error.general}" withAppStrings:strings];
+	NSString *loc = [NSString localizedString:@"{error.general}" withAppStrings:strings, nil];
 	assertThat(loc, equalTo(@"This is a general error: (null)"));
 }
 

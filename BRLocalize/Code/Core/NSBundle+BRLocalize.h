@@ -32,9 +32,18 @@
 @interface NSBundle (BRLocalize)
 
 /** Decode application strings file from a JSON file named @c strings. */
-@property (nonatomic, readonly) NSDictionary *appStrings;
+@property (nonatomic, readonly, nullable) NSDictionary *appStrings;
 
 /** Get application strings from the main bundle, caching the results. */
-+ (NSDictionary *)appStrings;
++ (nullable NSDictionary *)appStrings;
+
+/**
+ Get application strings for a specific locale.
+ 
+ @param locale The locale to get the strings for, or @c nil for the current locale.
+ 
+ @return The application strings.
+ */
+- (nullable NSDictionary *)appStringsForLocale:(nullable NSLocale *)locale;
 
 @end

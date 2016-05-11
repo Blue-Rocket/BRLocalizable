@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'BRLocalize'
-  s.version      = '0.10.0'
+  s.version      = '0.11.0'
   s.summary      = 'Simple localization toolkit for UIKit.'
 
   s.description        = <<-DESC

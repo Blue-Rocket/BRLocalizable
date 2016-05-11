@@ -73,4 +73,19 @@
 	assertThat(loc, equalTo(@"{error.doesNotExist}"));
 }
 
+- (NSString *)testArgsWithFormat:(NSString *)str, ... {
+	va_list args;
+	NSString *result = nil;
+	va_start(args, str);
+	result = [NSString localizedString:str withAppStrings:strings locale:nil arguments:args];
+	va_end(args);
+	return result;
+}
+
+- (void)testFoo {
+	NSString *loc = [self testArgsWithFormat:@"{error.general}", @"BAM!"];
+	assertThat(loc, equalTo(@"This is a general error: BAM!"));
+}
+
+
 @end
